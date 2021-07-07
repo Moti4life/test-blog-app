@@ -1,0 +1,59 @@
+h1{
+    font-size: 2.5rem;
+    margin: 2% 0%;
+}
+
+.sign{
+    margin-top: 3%;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.paraEllipsis > h3 , p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* min-width: none; */
+}
+
+body{
+    padding-bottom: 8rem;
+}
+
+.main-content{
+    padding: 0% 15%;
+}
+.navbar-background{
+    background-color: rgb(128, 213, 216);
+    padding: 1% 14%;
+}
+
+.footer{
+    text-align: center;
+}
+
+.composeArea{
+    margin: 5% 10%;
+}
+
+.saveBtn{
+    margin: 1%;
+}
+
+.form-group{
+    margin: 3% 0%;
+}
+
+.delBtn {
+    z-index: 2;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}

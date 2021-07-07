@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/header') %>
+
+    <%- include('partials/navbar')%>
+    <body>
+        <div class="main-content">
+            <div>
+                <h1>Compose a message</h1>
+            </div>
+            
+    
+            <form action="/compose" method="POST" class="composeArea">
+                <div class="form-group">
+                    <label for="composeTitle">Title:</label>
+                    <input type="text" class="form-control" id="composeTitle" placeholder="Title" name="composedtitle">
+                </div>
+                <div class="form-group">
+                    <label for="composeTextArea">Write your entry..</label>
+                    <textarea class="form-control" id="composeTextArea" rows="4" name="composedMessage" ></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-secondary saveBtn " data-bs-toggle="tooltip" data-bs-placement="right" title="Save to your journal">
+                    save
+                    </button>
+                </div>
+
+                
+            </form>
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    </body>
+    
+    <%- include('partials/footer') %>
+</html>
